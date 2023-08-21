@@ -1,0 +1,13 @@
+Perguntas pro chat gpt
+
+Podemos conectar o java sprign a uma api CRM? sales force por exemplo
+
+Podemos enviar email?
+
+oque é o MCV ?
+
+cOMO FUNCUOINA O FOR
+
+FOR CLASS PRODUCT : PRODUCTLIST ???
+
+Apos criar uma API RestFul, como podemos integrar com HTML ?

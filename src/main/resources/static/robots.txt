@@ -1,0 +1,69 @@
+   function getProductsAndRender() {
+         fetch('http://localhost:8081/products')
+             .then(response => response.json())
+             .then(data => {
+                 ReactDOM.render(<ProductTable products={data} />, document.getElementById('root'));
+             })
+             .catch(error => console.error('Erro ao buscar produtos:', error));
+     }
+
+     // Chama a função para buscar os produtos e renderizar a tabela ao carregar a página
+     getProductsAndRender();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Adicione o React, ReactDOM e o Babel -->
+<script src="https://unpkg.com/react@17.0.2/umd/react.production.min.js"></script>
+<script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/@babel/standalone@7.14.7/babel.min.js"></script>
+
+<script type="text/babel">
+    // Componente React para exibir a tabela de produtos
+    function ProductTable({ products }) {
+        return (
+            <table>
+                <thead>
+                <tr>
+                    <th>ID do Produto</th>
+                    <th>Nome do Produto</th>
+                </tr>
+                </thead>
+                <tbody>
+                {products.map(product => (
+                    <tr key={product.idProduct}>
+                        <td>{product.idProduct}</td>
+                        <td>{product.name}</td>
+                    </tr>
+                ))}
+                </tbody>
+            </table>
+        );
+    }
+
+    // Função para fazer a requisição AJAX e renderizar o componente ProductTable com os produtos
+
+</script>
